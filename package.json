@@ -1,16 +1,14 @@
 {
   "name": "nodejs-test",
-  "version": "0.0.1",
-  "description": "skema.com",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Nodejs-test",
+  "main": "server.js",
+  "author": {
+    "name": "Jacob V. Andersen"
+  },
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "^4.16.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Stine",
-  "license": "ISC"
+    "express": "^4.16.3",
+    "npm": "^5.7.1"
+  }
 }
