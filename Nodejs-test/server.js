@@ -24,3 +24,4 @@ app.get('/',function(req,res){
 app.listen(port,function(){
     console.log('SERVER RUNNING... PORT: ',+ port);
 })
+// Dette skal deles igen igen 
