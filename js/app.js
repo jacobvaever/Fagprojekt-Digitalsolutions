@@ -5,4 +5,4 @@ var myApp = angular.module('myApp', [
         $routeProvider.otherwise({redirectTo:'/home'});
 
         $locationProvider.html5Mode({anabled:true,requireBase:false});
-    }])
+    }]);
