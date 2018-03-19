@@ -7,15 +7,9 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}//Nodejs-test/server.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
             "protocol": "auto",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/Nodejs-test\\server.js"
+            "program": "${workspaceFolder}\\server.js"
         }
     ]
 }
