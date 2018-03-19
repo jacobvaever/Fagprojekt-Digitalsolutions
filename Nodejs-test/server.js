@@ -17,7 +17,7 @@ app.use(express.static(path.resolve(__dirname,'client','views')));
 
 // Set our first route
 app.get('/',function(req,res){
-    res.render('index1.ejs');
+    res.render('index2.ejs');
 });
 
 // Make our app listen for incoming requests on the port assigned above
