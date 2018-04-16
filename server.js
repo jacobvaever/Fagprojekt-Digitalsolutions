@@ -20,6 +20,12 @@ app.get('/',function(req,res){
     res.render('index2.ejs');
 });
 
+// set new route
+app.get('/projekt',function(req,res){
+    res.render('index.ejs');
+});
+
+
 // Make our app listen for incoming requests on the port assigned above
 app.listen(port,function(){
     console.log('SERVER RUNNING... PORT: ',+ port);

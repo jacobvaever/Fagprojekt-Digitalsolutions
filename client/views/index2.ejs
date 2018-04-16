@@ -1,67 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>main page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   
-<!-- Icon bar -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0;}
-
-.icon-bar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-}
-
-.icon-bar a {
-    float: left;
-    width: 20%;
-    text-align: center;
-    padding: 12px 0;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
-}
-
-.icon-bar a:hover {
-    background-color: #000;
-}
-
-.active {
-    background-color: rgb(48, 179, 52) !important;
-}
-</style>
-
-<div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-trash"></i></a> 
-  <a href="#"><i class="fa fa-envelope"></i></a> 
-  <a href="#"><i class="#"></i>Benny</a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
-</div>
-</head>
-<body>
-    
-<!--  -->
-
-<!-- -->
 
     
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" ng-app="myApp">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Skema</a>
+      <a class="navbar-brand" href="index.ejs">Skema</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Benny</a></li>
+      <li class="dropdown"><a class="dropdown-menu" data-toggle='dropdown' href="#">Benny</a></li>
       <li><a href="howto_google_maps.asp">Google Maps</a><br></li>
       <li><a href="#">Sygemelding</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
@@ -119,6 +74,19 @@ body {margin:0;}
     <script type="text/javascript" src="Nodejs-test/js/controllers/homeController.js"></script>
 
     <!-- -->
+    <script>
+
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl : "index2.ejs"
+            })
+            .when("/projekt", {
+                templateUrl : "index.ejs"
+            });  
+        });
+        </script>
     <script>
             function includeHTML() {
               var z, i, elmnt, file, xhttp;
