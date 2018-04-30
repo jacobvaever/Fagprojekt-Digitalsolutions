@@ -23,12 +23,12 @@
       position: relative;
       font-size: 16px; 
   }
-  #Murer {padding-top:50px;height:500px;color: #000; background-color: #1E88E5;}
+  #Toilet {padding-top:50px;height:500px;color: #000; background-color: #1E88E5;}
   #section2 {padding-top:50px;height:500px;color: #000; background-color: #673ab7;}
   #section3 {padding-top:50px;height:500px;color: #000; background-color: #ff9800;}
   #section41 {padding-top:50px;height:500px;color: #000; background-color: #00bcd4;}
   #section42 {padding-top:50px;height:500px;color: #000; background-color: #009688;}
-  thead{background-color: #5694f1}
+  /* thead{background-color: #ff0000} */
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -46,7 +46,7 @@
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#Murer"><i class='fas fa-bath' style="font-size:32px"></i> Toilet</a></li>
+          <li><a href="#Toilet"><i class='fas fa-bath' style="font-size:32px"></i> Toilet</a></li>
           <li><a href="#section2">Section 2</a></li>
           <li><a href="#section3">Section 3</a></li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
@@ -61,7 +61,7 @@
   </div>
 </nav>    
 
-<div id="Murer" class="container-fluid">
+<div id="Toilet" class="container-fluid">
   <h1>Murer</h1>
   <table class="table table-striped">
         <thead>
@@ -77,7 +77,7 @@
             <td>Bankegulv op (hele gulvet/rummet)</td>
             <td>
                 <div class="form-group">
-                    <input class="form-control input-lg" id="input11" type="number">
+                    <input class="form-control input-lg" id="input11" type="text" name= ng-model='t1'> 
                   </div>
             </td>
             <td>
